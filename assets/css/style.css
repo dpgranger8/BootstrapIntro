@@ -27,7 +27,7 @@ a {
     transition: var(--transition);
 }
 
-a:hover {
+a:not(.btn-brand):hover {
     color: var(--c-brand-light);
 }
 
@@ -42,6 +42,10 @@ img {
 }
 
 /* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
 .navbar-nav .nav-link {
     font-weight: 500;
     color: var(--c-dark);
@@ -72,3 +76,15 @@ img {
     border-color: var(--c-brand-light);
     color: white;
 }
+
+.btn-light {
+    background-color: white;
+}
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
